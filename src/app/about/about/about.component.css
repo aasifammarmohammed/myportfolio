@@ -1,0 +1,130 @@
+.aboutus-container {
+    width: 80%;
+    margin: 80px auto;
+    padding: 20px;
+}
+.aboutus-container .title {
+    font-size: 35px;
+    color: #ededed;
+    font-weight: 900;
+    text-align: center;
+}
+.my-profile img {
+    width: 180px;
+    height: 180px;
+    border: 10px solid #ededed;
+    float: left;
+    margin-right: 15px;
+} 
+.contents {
+    color: #ededed;
+}
+.contents p {
+    color: #ededed;
+    font-size: 20px;
+    font-weight: 200;
+    position: relative;
+}
+.about-content {
+    margin-top: 45px;
+}
+.mainTitle {
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+    color: #f2aa4cff;
+    margin-top: 25px;
+}
+.subTitle span {
+    font-style: italic;
+}
+.subTitle {
+    font-size: 22px;
+    display: inline-block;
+    border-bottom: 3px dotted #f2aa4cff;
+}
+.mat-tab-group {
+    margin-bottom: 48px;
+  }
+
+.achievements-tabs ul {
+    border-bottom: 0;
+    display: flex;
+    justify-content: center;
+    margin: 35px 0px;
+}
+.achievements-tabs ul li {
+    width: 250px;
+    text-align: center;
+}
+.achievements-tabs ul li a {
+    border-radius: 0 !important;
+    background: #f2aa4cc4 !important;
+    color: #ededed !important;
+}
+.achievements-tabs ul li a.nav-link.active {
+    background: #f2aa4cff !important;
+}
+.certificates {
+    width: 450px;
+    max-width: 100%;
+    border: 4px solid #ededed;
+}
+.ach-awards {
+    width: 200px;
+    border: 4px solid #ededed;
+}
+.image-block img {
+    margin: 15px;
+}
+.image-block {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 991px) {
+    .my-profile {
+        width: 100%;
+        display: block;
+    }
+    .contents { 
+        width: 100%;
+        display: block;
+    }
+    .my-profile img {
+        float: none;
+        display: block;
+        margin: auto !important;
+        margin-bottom: 15px !important;
+    }
+    .achievements-tabs ul { 
+        flex-direction: column;
+    }
+    .achievements-tabs ul li {
+        width: 100%; 
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .image-block { 
+        flex-direction: column;
+        align-items: center;
+    }
+    .contents p { 
+        font-size: 16px; 
+        display: block;
+        float: left;
+    }
+    p.mb-5 {
+        margin-bottom: 0px !important;
+    }
+    .subTitle {
+        font-size: 18px; 
+    }
+    .aboutus-container {
+        width: 98% !important; 
+    }
+    .aboutus-container .title {
+        font-size: 23px; 
+    }
+}

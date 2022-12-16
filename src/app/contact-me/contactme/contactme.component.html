@@ -1,0 +1,71 @@
+<div class="main-container mt-78"> 
+    <div class="contact-container wf100">
+        <div class="contact-form">
+            <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm.value, showData)">
+                <h5>Hire Me</h5>
+                <div class="form-group wf100">  
+                    <div class="form-floating wf100">
+                        <input type="text" class="form-control" id="floatingInput" formControlName="name"  placeholder="Name" > 
+                        <label for="floatingInput">Name of the Recruiter</label> 
+                      </div>
+                      <div class="form-floating wf100">
+                        <input type="text" class="form-control" id="floatingName" formControlName="company"  placeholder="Compnay name" >
+                        <label for="floatingName">Company Name</label>
+                      </div>
+                      <div class="form-floating wf100">
+                        <input type="email" class="form-control" id="floatingInput" formControlName="email"  placeholder="yourname@address.com" email>
+                        <label for="floatingInput">Email</label>
+                      </div>
+                      <div class="form-floating wf100">
+                        <input type="number" class="form-control" id="floatingInput" formControlName="phone"  placeholder="Mobile Number" >
+                        <label for="floatingInput">Phone</label>
+                      </div>
+                      <div class="form-floating wf100">
+                        <textarea class="form-control" placeholder="Enter your job description here" formControlName="comments"  id="floatingComments" ></textarea>
+                        <label for="floatingComments">Comments</label>
+                      </div>
+                      <div class="send-now wf100 mt-3">
+                        <button class="btn send-mail" type="submit" [disabled]="!myForm.valid">
+                          <span> </span>
+                          <span> </span>
+                          <span> </span>
+                          <span> </span>
+                          Send Mail
+                         <i class="fa fa-paper-plane" aria-hidden="true"></i> 
+                        </button> 
+                      </div>
+                </div>
+            </form> 
+
+            <ng-template #showData>
+               <div class="modal-header">
+                  <h4 class="modal-title">Please find the details you entered.</h4>
+                  <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+                     <span aria-hidden="true">×</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <div class="recruiter-details wf100">
+                    <div class="form-details">
+                      <label>Recruiter Name :</label>
+                      <span>{{name}}</span>
+                    </div>
+                    <div class="form-details">
+                      <label>Company Name :</label>
+                      <span>{{company}}</span>
+                    </div>
+                    <div class="form-details">
+                      <label>Email :</label>
+                      <span>{{email}}</span>
+                    </div>
+                    <div class="form-details">
+                      <label>Phone :</label>
+                      <span>{{phone}}</span>
+                    </div>
+                    <div class="form-details">
+                      <label>Comments :</label>
+                      <span>{{comments}}</span>
+                    </div>
+                  </div>
+               </div> 
+            </ng-template>

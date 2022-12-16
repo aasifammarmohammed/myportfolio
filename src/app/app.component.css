@@ -1,0 +1,24 @@
+.goToTop {
+    position: fixed;
+    right: 30px;
+    bottom: 30px; 
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ededed;
+    display: none;
+}
+.goToTop i {  
+    color: #ededed;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 3px;
+}
+.goToTop.displayGoToTop {
+    display: block;
+}

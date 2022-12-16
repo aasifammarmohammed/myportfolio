@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+
+.logo {
+    padding: 17px 35px 17px 25px;
+    border: 2px solid #f2aa4cff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+.logo span {
+    font-family: 'Rubik Iso', cursive;
+}
+.text-logo {
+    line-height: 20px;
+}
+.logo i {
+    color: #ededed;
+    font-size: 12px;
+}
+ul.navbar-nav{
+    margin-left: auto; 
+}
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    background-color: #000000 !important;
+    color: #ededed !important;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    display: block;
+    box-shadow: 0px 3px 34px #78787899;
+}
+nav.navbar.navbar-expand-lg.navbar-light.bg-light li, nav.navbar.navbar-expand-lg.navbar-light.bg-light li a {
+    color: #ededed;
+}
+nav.navbar.navbar-expand-lg.navbar-light.bg-light li  {
+    position: relative;
+    overflow: hidden;
+}
+nav.navbar.navbar-expand-lg.navbar-light.bg-light li  a.nav-link.active {
+    color: #f2aa4cff;
+}
+nav.navbar.navbar-expand-lg.navbar-light.bg-light li::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-bottom: 2px solid #f2aa4cff;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    transition: 0.5s;
+}
+nav.navbar.navbar-expand-lg.navbar-light.bg-light li:hover:after { 
+    top: 4px;
+    transition: 0.5s;
+}
+.navbar-collapse {
+    justify-content: flex-end !important
+}
+.navbar-toggle-width {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.btn.toggle-button {
+    color: #f2aa4cff;
+}
+a.navbar-brand.logo span:nth-child(2) {
+    transform: rotate(-90deg);
+    display: inline-block;
+    margin-left: 4px;
+}
+a.navbar-brand.logo span {
+    color: #f2aa4cff;
+    font-size: 22px;
+}  
+.fa-bars, .fa-times {
+    font-size: 22px;
+} 
+.fa-times {
+    display: none;
+}
+@media screen and (max-width: 991px) {
+    #navbarNav{
+        display: block; 
+        position: absolute;
+        right: 15px;
+        width: 300px;
+    }
+    ul.navbar-nav {
+        display: none;
+        position: absolute;
+        top: 0px;
+        right: 42px;
+        z-index: 2;
+    }
+    .navbar-toggle-width  { 
+        position: relative;
+    }
+    .logo  { 
+        z-index: -2;
+    }
+    .makeResponsive::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        background: #f2aa4cf2;
+        right: -96px;
+        top: -68px;
+        border-radius: 50%;
+        z-index: 1;
+    }
+    .makeResponsive  a.nav-link.active {
+        color: #000000 !important;
+    }
+    .makeResponsive  .btn.toggle-button {
+        color: #000000 !important;
+        z-index: 99999;
+    }
+    .makeResponsive .fa.fa-bars {
+        display: none;
+    }
+    .makeResponsive .fa.fa-times {
+        display: block;
+    }
+    .makeResponsive ul.navbar-nav {
+        display: block;
+    }
+} 
+@media screen and (min-width: 992px) {
+    .btn.toggle-button { 
+        display: none;
+    }
+}

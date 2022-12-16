@@ -1,0 +1,248 @@
+.contact-container {
+    min-height: 100vh;
+    overflow: hidden;
+}
+.contact-form {
+    width: 500px;
+    max-width: 100%;
+    display: block;
+    margin: 40px auto 0px auto;
+}
+.form-group {
+    padding: 30px;
+    box-shadow: 4px 7px 28px #f9f4f466;
+    margin-bottom: 50px;
+}
+.contact-form h5 { 
+    color: #ededed;
+    font-style: italic;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+.contact-form h5::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-bottom: 1px solid #f2aa4cff;
+    bottom: -4px;
+    height: 9px;
+    width: 155px;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.form-floating { 
+    margin-bottom: 15px;
+}
+.form-floating>label { 
+    top: -7px;
+}
+.send-mail[disabled] {
+    color: #0dcaf0bf;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px rgb(0, 0, 0) inset !important;
+}
+input:-webkit-autofill{
+    -webkit-text-fill-color: #ededed !important;
+}
+.form-floating input, .form-floating textarea, .form-floating input:focus, .form-floating textarea:focus {
+    border-radius: 0;
+    height: 50px !important;
+    padding: 22px 14px 11px 14px !important;
+    outline: 0 !important;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #565050;
+    color: #ededed;
+    box-shadow: none;
+}
+.form-floating  textarea {
+    min-height: 130px;
+}
+.form-floating label {
+    color: #b9b2b2;
+}
+.send-mail {
+    margin: auto;
+    display: block;
+    position: relative;
+    padding: 15px 30px;
+    box-shadow: 0 0 10px 5px #0dcaf04d;
+    color: #565050;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    overflow: hidden;
+    border-radius: 0;
+    width: 250px;
+}
+.send-mail i {
+    position: absolute;
+    right: 35px;
+    top: 62px;
+    transition: 0.5s;
+}
+.send-mail:hover i {
+    top: 15px;
+    color: #f2aa4cff;
+}
+.send-mail:hover {
+    color: #f2aa4cff;
+}
+
+.send-mail span:nth-child(1) {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 3px;
+	background: linear-gradient(to right, #171618, #f2aa4cff);
+	animation: animate1 2s linear infinite;
+}
+
+@keyframes animate1 {
+	0% {
+		transform: translateX(-100%);
+	}
+	100% {
+		transform: translateX(100%);
+	}
+}
+
+.send-mail span:nth-child(2) {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 3px;
+	background: linear-gradient(to bottom, #171618, #f2aa4cff);
+	animation: animate2 2s linear infinite;
+	animation-delay: 1s;
+}
+@keyframes animate2 {
+	0% {
+		transform: translateY(-100%);
+	}
+	100% {
+		transform: translateY(100%);
+	}
+}
+
+.send-mail span:nth-child(3) {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 3px;
+	background: linear-gradient(to left, #171618, #f2aa4cff);
+	animation: animate3 2s linear infinite;
+}
+
+@keyframes animate3 {
+	0% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+.send-mail span:nth-child(4) {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 3px;
+	background: linear-gradient(to top, #171618, #f2aa4cff);
+	animation: animate4 2s linear infinite;
+	animation-delay: 1s;
+}
+
+@keyframes animate4 {
+	0% {
+		transform: translateY(100%);
+	}
+	100% {
+		transform: translateY(-100%);
+	}
+}
+
+
+h4.modal-title {
+    font-weight: 600;
+    color: #f2aa4cff;
+}
+button.close {
+    color: #f2aa4cff;
+    border: none;
+    background: none;
+    font-size: 27px;
+    font-weight: 800;
+    position: absolute;
+    right: 22px;
+    top: 12px;
+}
+.modal-header {
+    border-bottom: 0;
+}
+.modal-content {
+    padding: 15px;
+}
+.form-details {
+    width: 100%;
+    float: left;
+    margin-bottom: 15px;
+}
+.form-details label {
+    color: rgb(228, 228, 228);
+    width: 145px;
+}
+.form-details span {
+    color: #fff;
+    font-weight: 600; 
+}
+.form-control.ng-invalid.ng-touched {
+    border-bottom: 1px solid red !important;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+ 
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@media screen and (max-width: 600px) {
+    .form-details label, .form-details span {
+       width: 100%;
+       display: block;
+    } 
+}
+
+.contact-container .form-group {
+    position: relative;
+    left: -1000px;
+    overflow: hidden;
+    -webkit-animation: contactSlide 0.1s forwards;
+    -webkit-animation-delay: 1s;
+    animation: contactSlide 0.1s forwards;
+    animation-delay: 1s;
+}
+
+@-webkit-keyframes contactSlide {
+    50% { left: -500px; }
+    100% { left: 0; }
+}
+
+@keyframes contactSlide {
+    50% { left: -500px; }
+    100% { left: 0; }
+}

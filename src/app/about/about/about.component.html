@@ -1,0 +1,98 @@
+<div class="main-container mt-78">
+    <div class="aboutus-container">
+        <h5 class="title animate__animated  animate__zoomIn">About Mohammed Aasif</h5>
+        <div class="about-content wf100">
+            <div class="my-profile">
+                <img src="assets/images/my-profile-about.JPEG" alt="aasif">
+            </div>
+            <div class="contents">
+                <p>I am Mohamed Aasif with <span>{{ yearsOfExperience }} </span>+ years of experience in Designing and Developing websites which are easy and faster to user with responsive design. </p>
+                <p class="mb-5">Let me share my work experience from Web Designer to Angular Developer and the current technologies I am going through.....!</p>
+                <br>
+                <br>
+                <div class="wf100">
+                    <h5 class="mainTitle animate__animated animate__flipInX">Web Designer</h5>
+                    <h6 class="subTitle">Organization : <span>Colan Infotech Private Limited. 2018-2021</span> </h6>
+                </div>
+                <p>As a fresher, I joined Colan Infotech as a web designer in September 2018. Here I am involved in designing the web pages using HTML, CSS, Bootstrap, JavaScript, and jQuery.</p>
+                <p>During the period of web design, I was nearly involved in creating web pages for 30+ websites with a responsive design that included multiple domains like <b>health care, banking, e-commerce, etc.</b>
+                </p>
+                <p>After spending two years, I played the role of team leader, which gave me a great opportunity to explore my knowledge by leading junior resources.</p>
+                <p>By having team-leading skills and strong knowledge in the design area, I preferred not to go with web design, so I chose Angular as my career after 2.8 years. By having very basic knowledge of Angular, I moved forward in my career journey to become a successful Angular developer.</p>
+                <div class="wf100 awards">
+                    <h5 class="mainTitle text-center">Achievement and Awards</h5>
+                    <div class="achievements-tabs">
+                        <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+                            <li [ngbNavItem]="1">
+                                <a ngbNavLink>June 2019</a>
+                                <ng-template ngbNavContent>
+                                    <div class="image-block">
+                                        <img class="certificates" src="assets/images/colanachievements/june-2019.jpg" alt="">
+                                        <img class="ach-awards" src="assets/images/colanachievements/a-june-2019.jpg" alt="">
+                                    </div>
+                                    <div class="description-block wf100">
+                                        <p>Received award for Outstanding and Lasting contribution in June 2019</p>
+                                    </div>
+                                </ng-template>
+                            </li>
+                            <li [ngbNavItem]="2">
+                                <a ngbNavLink>Quarter IV</a>
+                                <ng-template ngbNavContent>
+                                    <div class="image-block">
+                                        <img class="certificates" src="assets/images/colanachievements/q4.jpg" alt="">
+                                        <img class="ach-awards" src="assets/images/colanachievements/a-q4.jpg" alt="">
+                                    </div>
+                                    <div class="description-block wf100">
+                                        <p>Received award for Outstanding and Lasting contribution in Quarter IV 2019.</p>
+                                    </div>
+                                </ng-template>
+                            </li>
+                            <li [ngbNavItem]="3">
+                                <a ngbNavLink>November 2019</a>
+                                <ng-template ngbNavContent>
+                                    <div class="image-block">
+                                        <img class="certificates" src="assets/images/colanachievements/nov-2019.jpg" alt="">
+                                        <img class="ach-awards" src="assets/images/colanachievements/a-nov-2019.jpg" alt="">
+                                    </div>
+                                    <div class="description-block wf100">
+                                        <p>Received award for Outstanding and Lasting contribution in Novermber 2019</p>
+                                    </div>
+                                </ng-template>
+                            </li>
+                        </ul>
+                        <div [ngbNavOutlet]="nav" class="mt-2"></div>
+                    </div>
+                </div>
+                <hr class="wf100">
+                <div class="wf100">
+                    <h5 class="mainTitle animate__animated animate__flipInX">Angular Developer</h5>
+                    <h6 class="subTitle mb-3">Organization : <span>Virtusa</span> 2021-Present </h6>
+                    <p>I moved my journeyere as an Angular Developer after spending three years at Colan Infotech Private Limited. Now I am working on a project called Vision, a product of <b><i> <mark>Johnson & Johnson </mark></i></b> which is a pure cataract surgery site. </p>
+                    <p>The technologies we are using in this project are Angular 13, HTML, and CSS as the front end, and Java and Node as the back end.</p>
+                    <h6 class="subTitle mb-3">A Short Summary of the Project</h6>
+                    <p>About the project: It is a health care domain. It contains a login screen with different users (North and South) and the admin, where the site admin can access both North and South users. So the purpose of having north and south users is that, based on the site, the admin can provide a doctor assignee and a product that is a lens inside the application.</p>
+                    <p>Coming to the dashboard, as like other sites, it won't have those graphs and charts stuffs, it contains different columns like patient information, the task which patient has to do, the surgery date and the lens selection. Once we click on each information in a dashboard, it will redirect to the particular page based on the selection. For example, if the patient profile information section will contain patient name, patient age, the date which they selected for the surgery.</p>
+                    <p>
+                        <i>For security reasons, I have not disclosed more details about the project here.</i>
+                    </p>
+                    <div class="wf100 awards">
+                        <h5 class="mainTitle text-center">Achievement and Awards</h5>
+                        <div class="achievements-tabs">
+                            <ul ngbNav #navs="ngbNav" [(activeId)]="activeTab" class="nav-tabs">
+                                <li [ngbNavItem]="4">
+                                    <a ngbNavLink>June 2019</a>
+                                    <ng-template ngbNavContent> 
+                                        <div class="description-block wf100">
+                                            <p>Received SPOT award for smart working and quick involved in the project with the colleagues.</p>
+                                        </div>
+                                    </ng-template>
+                                </li> 
+                            </ul>
+                            <div [ngbNavOutlet]="navs" class="mt-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
